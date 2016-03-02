@@ -1,3 +1,4 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   .red-text {
@@ -13,10 +14,6 @@
     font-family: Monospace;
   }
 
-  .smaller-image {
-    width: 100px;
-  }
-
   .thick-green-border {
     border-color: green;
     border-width: 10px;
@@ -24,22 +21,18 @@
     border-radius: 50%;
   }
 
-  .gray-background {
-    background-color: gray;
-  }
-
-  #cat-photo-form {
-    background-color: green;
+  .smaller-image {
+    width: 100px;
   }
 </style>
 
-<h2 class="red-text">CatPhotoApp</h2>
+<div class="container-fluid">
+  <h2 class="red-text">CatPhotoApp</h2>
 
-<p>Click here for <a href="#">cat photos</a>.</p>
+  <p>Click here for <a href="#">cat photos</a>.</p>
 
-<a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"></a>
+  <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back"></a>
 
-<div class="gray-background">
   <p>Things cats love:</p>
   <ul>
     <li>cat nip</li>
@@ -52,14 +45,14 @@
     <li>thunder</li>
     <li>other cats</li>
   </ol>
-</div>
 
-<form action="/submit-cat-photo" id="cat-photo-form">
-  <label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
-  <label><input type="radio" name="indoor-outdoor">Outdoor</label>
-  <label><input type="checkbox" name="personality" checked>Loving</label>
-  <label><input type="checkbox" name="personality">Lazy</label>
-  <label><input type="checkbox" name="personality">Energetic</label>
-  <input type="text" placeholder="cat photo URL" required>
-  <button type="submit">Submit</button>
-</form>
+  <form action="/submit-cat-photo" id="cat-photo-form">
+    <label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
+    <label><input type="radio" name="indoor-outdoor">Outdoor</label>
+    <label><input type="checkbox" name="personality" checked>Loving</label>
+    <label><input type="checkbox" name="personality">Lazy</label>
+    <label><input type="checkbox" name="personality">Energetic</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
