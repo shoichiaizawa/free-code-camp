@@ -61,8 +61,14 @@
   </ol>
 
   <form action="/submit-cat-photo" id="cat-photo-form">
-    <label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
-    <label><input type="radio" name="indoor-outdoor">Outdoor</label>
+    <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor">Outdoor</label>
+      </div>
+    </div>
     <label><input type="checkbox" name="personality" checked>Loving</label>
     <label><input type="checkbox" name="personality">Lazy</label>
     <label><input type="checkbox" name="personality">Energetic</label>
